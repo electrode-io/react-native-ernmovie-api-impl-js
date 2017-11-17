@@ -14,10 +14,10 @@ MoviesApi.requests().registerGetTopRatedMoviesRequestHandler((requestData) => {
     imageUrl: 'http://bit.ly/2xAX0Cv',
     description: 'Avatar'
   }]
-  Promise.resolve(movies)
+  return Promise.resolve(movies)
 })
 
 MoviesApi.requests().registerGetMovieDetailRequestHandler((requestData) => {
   //TODO: Write your implementation and resolve or reject the promise
-  //Promise.resolve(result) || Promise.reject(err)
+  //return Promise.resolve(result) || Promise.reject(err)
 })
